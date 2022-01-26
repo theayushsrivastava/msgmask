@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingStart="15dp"
+    android:paddingTop="15dp"
+    android:paddingEnd="15dp"
+    android:paddingBottom="15dp">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:drawableLeft="@drawable/ic_settings"
+        android:text="Settings"
+        android:textColor="#221515"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_marginTop="15dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/textView242"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="25dp"
+                android:layout_toStartOf="@+id/switch12"
+                android:padding="10dp"
+                android:text="Phone Contacts"
+                android:textColor="#1E1E1E"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView252"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView242"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="-20dp"
+                android:layout_marginEnd="25dp"
+                android:layout_toStartOf="@+id/switch12"
+                android:padding="10dp"
+                android:text="If disabled, SPAM messages will not be detected for saved contacts"
+                android:textColor="#615D5D" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switch12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="1dp"
+                android:checked="true"
+                android:hapticFeedbackEnabled="true"
+                android:textOff="OFF"
+                android:textOn="ON"
+                android:thumb="@drawable/custom_thumb"
+                app:showText="true"
+                app:track="@drawable/custom_track" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/textView2421"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="25dp"
+                android:layout_toStartOf="@+id/switch123"
+                android:padding="10dp"
+                android:text="Notifications"
+                android:textColor="#1E1E1E"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView2521"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView2421"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="-20dp"
+                android:layout_marginEnd="25dp"
+                android:layout_toStartOf="@+id/switch123"
+                android:padding="10dp"
+                android:text="If disabled, notification will not appear when SPAM is detected"
+                android:textColor="#615D5D" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switch123"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="1dp"
+                android:checked="true"
+                android:hapticFeedbackEnabled="true"
+                android:textOff="OFF"
+                android:textOn="ON"
+                android:thumb="@drawable/custom_thumb"
+                app:showText="true"
+                app:track="@drawable/custom_track" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

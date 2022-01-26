@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MsgMask</string>
+    <string name="channel1">spam</string>
+    <string name="channel1_des">notification regariding suspicous message</string>
+</resources>

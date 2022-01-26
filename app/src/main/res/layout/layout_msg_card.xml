@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/customer_rl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:clickable="true"
+    android:padding="10dp">
+
+
+    <ImageView
+        android:id="@+id/firstChar_cv"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        app:srcCompat="@drawable/ic_chat"
+        tools:ignore="VectorDrawableCompat" />
+
+
+    <TextView
+        android:id="@+id/address_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_toStartOf="@+id/date_tv"
+        android:layout_toEndOf="@id/firstChar_cv"
+        android:text="Mansi"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/date_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="0dp"
+        android:text="2m ago"
+        android:textColor="#333333"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/body_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/address_tv"
+        android:layout_alignStart="@+id/address_tv"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="20dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="1234567890"
+        android:textColor="#252525" />
+
+    <TextView
+        android:id="@+id/alert_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/body_tv"
+        android:layout_alignStart="@+id/body_tv"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:drawableLeft="@drawable/ic_exclamation"
+        android:gravity="center|start"
+        android:text="Suspected spam"
+        android:textColor="#FF4848"
+        android:textSize="12sp"
+        android:visibility="invisible" />
+
+    <View
+        android:id="@+id/divider4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/alert_tv"
+        android:layout_marginTop="5dp"
+        android:background="#F6F6F6" />
+
+</RelativeLayout>

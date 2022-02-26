@@ -161,7 +161,6 @@ public class MainActivity extends AppCompatActivity implements SMSCallback {
                 startActivity(new Intent(MainActivity.this,SpamActivity.class));
             }
         });
-
     }
 
     private void requestSmsPermission() {
